@@ -46,10 +46,14 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 <!-- tocstop -->
 
 </details>
+
 ***
 
 ## Comparisons
 
-### Day 1: [Part-to-Whole](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole)
+### Day 01: [Part-to-Whole](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole)
 
 ![drinking water](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/01-part_to_whole/drinking-water.png)
+
+### Day 02: [Waffle](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/02-Waffle)
+
