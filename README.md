@@ -57,3 +57,4 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 
 ### Day 02: [Waffle](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/02-Waffle)
 
+![Storms](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/02-Waffle/storms.png)
