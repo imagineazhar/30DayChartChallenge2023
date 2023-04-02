@@ -52,4 +52,4 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 
 ### Day 1: [Part-to-Whole](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole)
 
-![drinking water](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole/drinking-water.png)
+![drinking water](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/01-part_to_whole/drinking-water.png)
