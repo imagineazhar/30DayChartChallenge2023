@@ -50,6 +50,6 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 
 ## Comparisons
 
-### Day 1: [Part-to-Whole]()
+### Day 1: [Part-to-Whole](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole)
 
-![]()<br>***Tool:*** *Microsoft PowerPoint*<br><br>
+![tools]()<br>***Tool:*** **<br><br>
