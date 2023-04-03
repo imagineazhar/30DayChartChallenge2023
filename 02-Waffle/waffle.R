@@ -22,8 +22,8 @@ body_font <- "body_font"
 
 # ------ Texts ------ 
 
-title_text <- "In the Atlantic Ocean, tropical storms are more common than others."
-subtitle_text <- "showing number of storms for each year since 2010."
+title_text <- "In the Atlantic Ocean, tropical storms are more common than other cyclones."
+subtitle_text <- "Tropical Storm is a cyclone with maximum sustained winds of 39 to 73 mph (34 to 63 knots).\nshowing number of cyclones for each year since 2010"
 caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: NOAA"
 
 # ------ Plot ------ 
