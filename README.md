@@ -1,6 +1,6 @@
 # 30DayMapChallenge
 
-My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.org/).
+My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.org/).
 
 ![./data/covser.jpg](cover.jpg)
 
