@@ -33,7 +33,7 @@ body_font <- "body_font"
 
 # ------ Texts ------ 
 
-title_text <- "Pakistan's diet is largely based on cereals and grains."
+title_text <- "Diet in Pakistan is largely based on Cereals and Grains."
 subtitle_text <- "Average per capita dietary energy intake by product category, defined in kilocalories per person per day."
 caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:  Food and Agriculture Organization of the United Nations"
 
