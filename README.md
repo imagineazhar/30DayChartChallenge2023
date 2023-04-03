@@ -11,7 +11,7 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 * Comparisons
   * Day 1: [Part-to-Whole](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/01-part_to_whole)
   * Day 2: [Waffle](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/02-Waffle)
-  * Day 3: [fauna-flower]
+  * Day 3: [fauna-flower](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fuana_flower)
   * Day 4: [Historical]
   * Day 5: [Slope]
   * Day 6: [data-day-OWID]
@@ -58,3 +58,7 @@ My contributions to the [#30DayChartChallenge 2022](https://30daychartchallenge.
 ### Day 02: [Waffle](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/02-Waffle)
 
 ![Storms](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/02-Waffle/storms.png)
+
+### Day 03: [Fuana/Flower](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fuana_flower)
+
+![Diet](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/03-fuana_flower/diet.png)
