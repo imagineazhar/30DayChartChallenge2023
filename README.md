@@ -62,3 +62,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 03: [Fauna/Flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
 
 ![Diet](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/03-fauna_flora/diet.png)
+
+### Day 04: [Historical](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/04-historical)
+
+![birth-rate](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/04-historical/birth-rate.png)
