@@ -5,9 +5,13 @@ library(MetBrewer)
 
 # ------ Get Data ------ 
 
-df <- read.csv("diet.csv")
+df <- read.csv("birth-rate.csv")|>
+  rename(birth_rate = International.Historical.Statistics..Births.per.1.000...Brian.Mitchell..2013..)
 
-
+birth <- df|> filter(!Code=="")|>
+  group_by(Year)|>summarise(mean=mean(birth_rate), n=n())|>
+  filter(!is.na(mean))|>
+  ungroup()
 # ------ Typography ------ 
 
 font_add_google("Outfit", "title_font")
@@ -19,27 +23,29 @@ body_font <- "body_font"
 
 # ------ Texts ------ 
 
-title_text <- ""
-subtitle_text <- ""
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: "
+title_text <- "Declining Trend: Global Birth Rate Below Historical Average Since 1995"
+subtitle_text <- "Showing global average of birth rate since 1749.\nBirth rate is measured as the number of births per 1,000 people in the population."
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: International Historical Statistics, Brian Mitchell (2013) "
 
 # ------ Plot ------ 
 
-diet|>  ggplot() +
+birth |>  ggplot(aes(x=Year, y=mean, label=mean)) +
+  geom_area(fill="#EA5455", alpha=0.4)+
+  geom_line(color="#EA5455", size=2)+
+  geom_hline(yintercept = 31.62, linetype="dashed", size=0.8)+
+  annotate("text", x=2000, y=33, label="Average: 31.62")+
   coord_cartesian(clip = "off") +
   labs(title = title_text,
        subtitle = subtitle_text,
        caption = caption_text)+
   theme_minimal()+
   theme(
-    panel.grid = element_blank(),
-    panel.grid.major.x = element_line(linetype = "dotted"),
     axis.line.x = element_line(),
     axis.title.x  = element_blank(),
     axis.title.y  = element_blank(),
     axis.text.x.top = element_blank(),
     axis.text.x = element_text(family = body_font, size=12),
-    axis.text.y = element_blank(),
+    axis.text.y = element_text(family = body_font, size=12),
   
     
   # Legend
@@ -75,14 +81,14 @@ diet|>  ggplot() +
                               margin=margin(20,0,0,0)),
   
   plot.background = element_rect(color="white", fill="white"),
-  plot.margin = margin(30, 30, 20, 40)
+  plot.margin = margin(40, 40, 40, 40)
 )
 
 
 # ------ Save Plot ------ 
 
 showtext_opts(dpi = 320)
-ggsave(".png",dpi=320,
+ggsave("birth-rate.png",dpi=320,
        width = 12, height = 10)
 showtext_auto(FALSE)
 
