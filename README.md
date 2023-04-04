@@ -1,4 +1,4 @@
-# 30DayMapChallenge
+# #30DayChartChallenge
 
 My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.org/).
 
