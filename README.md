@@ -59,6 +59,6 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 
 ![Storms](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/02-Waffle/storms.png)
 
-### Day 03: [Fuana/Flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
+### Day 03: [Fauna/Flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
 
 ![Diet](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/03-fauna_flora/diet.png)
