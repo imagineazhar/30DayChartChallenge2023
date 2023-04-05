@@ -69,4 +69,4 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 
 ### Day 05: [Slope](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/05-slope)
 
-![forest-area](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/05-slope/forest-area.png)
+![forest-area](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/05-slope/forest_area.png)
