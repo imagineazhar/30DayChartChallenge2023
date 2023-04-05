@@ -35,7 +35,7 @@ title_font <- "title_font"
 body_font <- "body_font"
 
 # ------ Texts ------ 
-title_text <- "Annual change in forest area, 2010 to 2020"
+title_text <- "The forest area in 62 countries increased between 2010 and 2020."
 subtitle_text <- "Forest area net change rate measures the annual net change in forested area, as a percentage of total forest
 area. Negative values indicate a net loss of forest, and positive values a net gain."
 caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:  Food and Agriculture Organization of the United Nations."
@@ -73,7 +73,7 @@ forest_df |>
   coord_cartesian(clip = "off") +
   scale_x_discrete(expand = c(.3, 0.3), position = "top") +
   scale_y_continuous(expand = c(0, 0), limits = c(-6, 7)) +
-  rcartocolor::scale_color_carto_c(palette = "teal", direction = 1, 
+  rcartocolor::scale_color_carto_c(palette = "Fall", direction = 1, 
                                    limits = c(-20, 20), guide = "none") +
   labs(
     title = title_text,
@@ -89,14 +89,14 @@ theme(
   # TITLE
   plot.title.position = "panel",
   plot.title = element_textbox(margin = margin(20, 0, 10, 0),
-                               size = 37,
+                               size = 26,
                                hjust = 0.5,
                                family = title_font,
                                face = "bold",
                                width = unit(55, "lines")),
   # SUB-TITLE
   plot.subtitle = element_textbox(margin = margin(10, 0, 20, 0),
-                               size = 20,
+                               size = 16,
                                hjust = 0.5,
                                family = body_font,
                                color = "grey15",
