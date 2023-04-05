@@ -13,7 +13,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 2: [waffle](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/02-waffle)
   * Day 3: [fauna-flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
   * Day 4: [Historical](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/04-historical)
-  * Day 5: [Slope]
+  * Day 5: [Slope](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/05-slope)
   * Day 6: [data-day-OWID]
 * Distributions
   * Day 7: [Hazards]
@@ -66,3 +66,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 04: [Historical](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/04-historical)
 
 ![birth-rate](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/04-historical/birth-rate.png)
+
+### Day 05: [Slope](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/05-slope)
+
+![forest-area](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/05-slope/forest-area.png)
