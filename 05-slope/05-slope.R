@@ -38,7 +38,7 @@ body_font <- "body_font"
 title_text <- "Annual change in forest area, 2010 to 2020"
 subtitle_text <- "Forest area net change rate measures the annual net change in forested area, as a percentage of total forest
 area. Negative values indicate a net loss of forest, and positive values a net gain."
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:  United Nations, World Population Prospects (2022) "
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:  Food and Agriculture Organization of the United Nations."
 
 # ------ Plot ------ 
 
