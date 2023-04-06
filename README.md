@@ -14,7 +14,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 3: [fauna-flora](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/03-fauna_flora)
   * Day 4: [Historical](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/04-historical)
   * Day 5: [Slope](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/05-slope)
-  * Day 6: [data-day-OWID]
+  * Day 6: [data-day-OWID](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/06-OWID)
 * Distributions
   * Day 7: [Hazards]
   * Day 8: [Humans]
