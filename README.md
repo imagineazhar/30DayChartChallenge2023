@@ -20,7 +20,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 8: [Humans]
   * Day 9: [High/Low]
   * Day 10: [Hybrid]
-  * Day 11: Circular
+  * Day 11: [Circular]
   * Day 12: [theme-day:BBC-News]
 * Relationships
   * Day 13: [Pop-Culture]
@@ -75,6 +75,6 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 
 ![comm-tech](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/06-OWID/tech.png)
 
-## Distribtions
+## Distributions
 
 ### Day 07: [Hazards](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/07-hazards)
