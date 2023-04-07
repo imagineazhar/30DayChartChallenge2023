@@ -1,3 +1,3 @@
-# 30DayChartChallenge — Comparisons — Day 06: OWID
+# 30DayChartChallenge — Distributions — Day 07: Hazards
 
-![comm-tech](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/06-OWID/tech.png)
+![earthquakes](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/07-hazards/earthquakes.png)

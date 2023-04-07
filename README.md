@@ -78,3 +78,5 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ## Distributions
 
 ### Day 07: [Hazards](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/07-hazards)
+
+![earthquakes](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/07-hazards/earthquakes.png)

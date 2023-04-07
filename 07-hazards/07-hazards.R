@@ -1,28 +1,19 @@
 library(tidyverse)
-library(ggstream)
 library(showtext)
 library(ggtext)
+library(ggridges)
 library(MetBrewer)
 
 # ------ Get Data ------ 
+# Data: (https://www.ngdc.noaa.gov/hazel/view/hazards/earthquake/event-data)
+df <- readr::read_tsv("earthquakes.tsv")|>
+  select(Year,Mo,"Location Name")
 
-df <- read.csv("ict-adoption.csv")|>
-  janitor::clean_names()|>
-  rename( "Telephone Subscriptions" = "fixed_telephone_subscriptions",
-          "Broadband Subscriptions" = "fixed_broadband_subscriptions",
-          "Mobile Cellular Subscriptions" = "mobile_cellular_subscriptions",
-          "Number of Internet Users" = "number_of_internet_users")
-
-tech_df <- df|> pivot_longer(cols = c("Telephone Subscriptions",
-                                  "Broadband Subscriptions",
-                                  "Mobile Cellular Subscriptions",
-                                  "Mobile Cellular Subscriptions",
-                                  "Number of Internet Users"
-                                  ),
-                         values_to = "users",
-                         names_to = "tech")|>
-  filter(entity=="World")
-
+earth <- df|> 
+  mutate(MonthName=month.name[Mo])|>
+  group_by(Year, MonthName)|>
+  summarise(n=n())|>
+  filter(!is.na(Year))
 
 # ------ Typography ------ 
 
@@ -34,74 +25,60 @@ title_font <- "title_font"
 body_font <- "body_font"
 
 # ------ Texts ------ 
-title_text <- "Since 2000, Communication Technologies Adoption Has Skyrocketed Worldwide."
-subtitle_text <- "showing the number of users subscribed to different communication technologies."
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:OurWorldInData"
+
+title_text <- "Monthly Distribution of Earthquakes, 1950-2023"
+subtitle_text <- "Analyzing the number of earthquakes that occurred in each month."
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: NOAA"
 
 # ------ Plot ------ 
 
-tech_df |> ggplot(aes(x=year, y=users, fill=tech))+
-  geom_stream(type = "ridge")+
-  scale_x_continuous(limits = c(1960,2020),breaks = seq(1960,2020,10),
-                     sec.axis = sec_axis(trans=~.))+
-  scale_fill_met_d("VanGogh2", direction = -1)+
-  coord_cartesian(clip = "off") +
+earth |> ggplot(aes(x = n, y = factor(MonthName, levels = month.name),
+                    fill="pink")) +
+  geom_density_ridges(alpha=0.8)+
+  scale_x_continuous(expand = c(0.01, 0))+
+  theme_ridges()+
   labs(title = title_text,
        subtitle = subtitle_text,
        caption = caption_text)+
-  theme_minimal()+
   theme(
-    panel.grid = element_blank(),
-    panel.grid.major.x = element_line(linetype = "dotted"),
-    axis.line.x = element_line(),
     axis.title.x  = element_blank(),
     axis.title.y  = element_blank(),
-    axis.text.x.top = element_blank(),
-    axis.text.x = element_text(family = body_font, size=12),
-    axis.text.y = element_blank(),
-    
+    axis.text.x = element_text(family = body_font, size=14),
+    axis.text.y = element_text(family = body_font, size=14),
     
     # Legend
-    legend.position = "top",
-    legend.title = element_blank(),
-    legend.spacing = unit(0.5, 'cm'),
-    legend.key.height= unit(0.5, 'cm'),
-    legend.key.width= unit(0.7, 'cm'),
-    legend.text = element_text(family = body_font,
-                               size=13,
-                               face = 'plain',
-                               color = "grey10"),
-    
+    legend.position = "none",
     # TITLE
     plot.title.position = "plot",
     plot.title = element_textbox(margin = margin(20, 0, 10, 0),
-                                 size = 28,
+                                 size = 36,
                                  family = title_font,
                                  face = "bold",
-                                 width = unit(80, "lines")),
+                                 width = unit(60, "lines")),
     
     # SUB-TITLE
-    plot.subtitle = element_text(margin = margin(10, 0, 20, 0),
-                                 size = 16,
+    plot.subtitle = element_textbox(margin = margin(10, 0, 20, 0),
+                                 size = 24,
                                  family = body_font,
-                                 color = "grey15"),
+                                 color = "grey15",
+                                 width = unit(65, "lines")),
     # Caption
     plot.caption = element_text(family=body_font,
                                 face="plain",
-                                size=14, 
+                                size=16, 
                                 color="grey40",
                                 hjust=.5,
                                 margin=margin(20,0,0,0)),
     
     plot.background = element_rect(color="white", fill="white"),
-    plot.margin = margin(40, 40, 40, 40)
+    plot.margin = margin(40, 70, 40, 70)
   )
 
 
 # ------ Save Plot ------ 
 
 showtext_opts(dpi = 320)
-ggsave("tech.png",dpi=320,
-       width = 16, height = 10)
+ggsave("earthquakes.png",dpi=320,
+       width = 14, height = 16)
 showtext_auto(FALSE)
 
