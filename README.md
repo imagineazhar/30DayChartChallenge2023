@@ -16,7 +16,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 5: [Slope](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/05-slope)
   * Day 6: [data-day-OWID](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/06-OWID)
 * Distributions
-  * Day 7: [Hazards]
+  * Day 7: [Hazards](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/07-hazards)
   * Day 8: [Humans]
   * Day 9: [High/Low]
   * Day 10: [Hybrid]
@@ -74,3 +74,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 06: [OWID](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/06-OWID)
 
 ![comm-tech](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/06-OWID/tech.png)
+
+## Distribtions
+
+### Day 07: [Hazards](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/07-hazards)
