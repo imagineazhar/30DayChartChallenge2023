@@ -35,7 +35,7 @@ body_font <- "body_font"
 
 title_text <- "Suicide Rate, 2000-2019"
 subtitle_text <- "Adjusted annual suicide rate per 100,000 people, accounting for underreporting in various countries."
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data:WHO, Global Health Observatory"
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: WHO, Global Health Observatory"
 
 # ------ Plot ------ 
 
