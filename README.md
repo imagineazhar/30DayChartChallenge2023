@@ -18,7 +18,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 * Distributions
   * Day 7: [Hazards](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/07-hazards)
   * Day 8: [Humans](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/08-humans)
-  * Day 9: [High/Low]
+  * Day 9: [High/Low](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/09-high_low)
   * Day 10: [Hybrid]
   * Day 11: [Circular]
   * Day 12: [theme-day:BBC-News]
@@ -84,3 +84,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 08: [Humans](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/08-humans)
 
 ![suicide-rate](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/08-humans/suicide.png)
+
+### Day 09: [high/low](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/09-high_low)
+
+![agri_land](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/09-high_low/land.png)
