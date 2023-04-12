@@ -96,3 +96,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 11: [Circular](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/11-circular)
 
 ![sapce_objects](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/11-circular/space_objects.png)
+
+### Day 12: [BBC Theme](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/12-BBC_theme)
+
+![forest_area](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/12-BBC_theme/forest_area.png)
