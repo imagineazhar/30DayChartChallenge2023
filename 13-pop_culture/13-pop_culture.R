@@ -45,10 +45,10 @@ caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: IMDb"
 ggplot(df, aes(x = genre, y = rating, color = genre, fill = genre))+
   geom_point(
     position = position_jitter(width = .2, seed = 0),
-    size = 7, alpha = .5) +
+    size = 5, alpha = .5) +
   geom_point(
     position = position_jitter(width = .2, seed = 0),
-    size = 5, stroke = .9, shape = 1, color = "black") +
+    size = 7, stroke = .9, shape = 1, color = "black") +
   geom_text(data = df |> 
               group_by(genre) |>
               slice_min(order_by=rating, n=1),
