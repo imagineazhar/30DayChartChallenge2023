@@ -24,7 +24,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 12: [theme-day:BBC-News](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/12-BBC_theme)
 * Relationships
   * Day 13: [Pop-Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
-  * Day 14: [Newtool]
+  * Day 14: [Newtool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
   * Day 15: [Psoitive/Negative]
   * Day 16: [Family]
   * Day 17: [Networks]
