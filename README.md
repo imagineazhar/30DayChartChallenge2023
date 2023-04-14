@@ -23,9 +23,9 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 11: [Circular](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/11-circular)
   * Day 12: [theme-day:BBC-News](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/12-BBC_theme)
 * Relationships
-  * Day 13: [Pop-Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
-  * Day 14: [Newtool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
-  * Day 15: [Psoitive/Negative]
+  * Day 13: [Pop Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
+  * Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
+  * Day 15: [Positive/Negative]
   * Day 16: [Family]
   * Day 17: [Networks]
   * Day 18: [data-day-EuroStat]
@@ -106,7 +106,6 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 13: [Pop Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
 
 ![movies](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/13-pop_culture/IMDb.png)
-
 
 ### Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
 
