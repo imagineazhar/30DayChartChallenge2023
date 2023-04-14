@@ -106,3 +106,8 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 13: [Pop Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
 
 ![movies](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/13-pop_culture/IMDb.png)
+
+
+### Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
+
+![CO2 Emissions](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/14-new_tool/CO2.png)
