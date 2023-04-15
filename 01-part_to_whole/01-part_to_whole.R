@@ -79,13 +79,12 @@ water |> ggplot(aes(y = Entity, x = percentage, fill = group,
                              color = "grey10"),
   
   # TITLE
-  plot.title.position = "panel",
-  plot.title = element_textbox(margin = margin(20, 0, 10, 0),
+  plot.title.position = "plot",
+  plot.title = element_textbox(margin = margin(20, 0, 30, 0),
                             size = 30,
-                            hjust = 0.5,
                             family = title_font,
                             face = "bold",
-                            width = unit(48, "lines")),
+                            width = unit(70, "lines")),
   # Caption
   plot.caption = element_text(family=body_font,
                               face="plain",
