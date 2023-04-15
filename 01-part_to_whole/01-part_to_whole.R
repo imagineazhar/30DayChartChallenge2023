@@ -72,7 +72,7 @@ water |> ggplot(aes(y = Entity, x = percentage, fill = group,
   legend.position = "top",
   legend.title = element_blank(),
   legend.key.height= unit(0.5, 'cm'),
-  legend.key.width= unit(0.7, 'cm'),
+  legend.key.width= unit(1, 'cm'),
   legend.text = element_text(family = body_font,
                              size=13,
                              face = 'plain',
@@ -81,10 +81,10 @@ water |> ggplot(aes(y = Entity, x = percentage, fill = group,
   # TITLE
   plot.title.position = "plot",
   plot.title = element_textbox(margin = margin(20, 0, 30, 0),
-                            size = 30,
+                            size = 35,
                             family = title_font,
                             face = "bold",
-                            width = unit(70, "lines")),
+                            width = unit(60, "lines")),
   # Caption
   plot.caption = element_text(family=body_font,
                               face="plain",
@@ -102,6 +102,6 @@ water |> ggplot(aes(y = Entity, x = percentage, fill = group,
 
 showtext_opts(dpi = 320)
 ggsave("drinking-water.png",dpi=320,
-       width = 12, height = 9)
+       width = 13, height = 9)
 showtext_auto(FALSE)
 
