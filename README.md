@@ -25,7 +25,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 * Relationships
   * Day 13: [Pop Culture](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/13-pop_culture)
   * Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
-  * Day 15: [Positive/Negative]
+  * Day 15: [Positive/Negative](https://github.com/imagineazhar/TidyTuesday/tree/main/2023/Week-09)
   * Day 16: [Family]
   * Day 17: [Networks]
   * Day 18: [data-day-EuroStat]
@@ -110,3 +110,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
 
 ![CO2 Emissions](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/14-new_tool/CO2.png)
+
+### Day 15: [Positive/Negative](https://github.com/imagineazhar/TidyTuesday/tree/main/2023/Week-09)
+
+![afri-senti](https://github.com/imagineazhar/TidyTuesday/blob/main/2023/Week-09/week-09.png)
