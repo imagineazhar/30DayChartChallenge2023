@@ -24,7 +24,7 @@ life <- merge(x=df,y=countries,
   mutate(category_nr = row_number())|>
   ungroup()
 
-f = 0.8  # change to change shape of the "balloon"
+f = 0.9  # change to change shape of the "balloon"
 
 df_shapes <- life |>
   rowwise()|>
@@ -49,7 +49,7 @@ df_shapes <- life |>
   unnest(x_1:y_3)
 
 # Category colors
-pal <- c("#469990","#BAD7E9","#EB455F")
+pal <- c("#6fcb86","#fac748","#fc5130")
 
 # Pull categories from the dataset
 cat <- life|>
@@ -85,9 +85,10 @@ df_shapes |> ggplot()+
                       breaks = pal, labels = pal_df$l) +
   guides(fill = guide_legend(nrow = 1,
                              label.position = "top"))+
-  coord_fixed() +
-  facet_wrap(vars(country), ncol = 6,
-             labeller = labeller(country = label_wrap_gen(width = 15)))+
+  coord_fixed(clip="off")+
+
+  facet_wrap(vars(country), ncol = 7,
+             labeller = labeller(country = label_wrap_gen(width = 10)))+
   labs(title = title_text,
        subtitle = subtitle_text,
        caption = caption_text,
@@ -97,7 +98,7 @@ df_shapes |> ggplot()+
   theme(
     strip.text.x = element_text(family = title_font,
                                 face = 'bold',
-                                size = 15, colour = "grey20"),
+                                size = 12, colour = "grey20"),
     axis.text.y = element_blank(),
     axis.ticks.y = element_blank(),
     axis.text.x = element_blank(),
@@ -145,6 +146,6 @@ df_shapes |> ggplot()+
 
 showtext_opts(dpi = 320)
 ggsave("life_satis.png",dpi=320,
-       width = 14, height = 12)
+       width = 12, height = 14)
 showtext_auto(FALSE)
 
