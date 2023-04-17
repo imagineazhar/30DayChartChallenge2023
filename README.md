@@ -27,7 +27,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 14: [New Tool](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/14-new_tool)
   * Day 15: [Positive/Negative](https://github.com/imagineazhar/TidyTuesday/tree/main/2023/Week-09)
   * Day 16: [Family](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/16-family)
-  * Day 17: [Networks]
+  * Day 17: [Networks](https://github.com/imagineazhar/TidyTuesday/tree/main/2022/Week_42)
   * Day 18: [data-day-EuroStat]
 * Timeseries
   * Day 19: [Anthroprocene]
@@ -118,3 +118,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ### Day 16: [Family](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/16-family)
 
 ![One-person Household](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/16-family/alone.png)
+
+### Day 17: [Networks](https://github.com/imagineazhar/TidyTuesday/tree/main/2022/Week_42)
+
+![Stranger Things](https://github.com/imagineazhar/TidyTuesday/blob/main/2022/Week_42/week_42.png)
