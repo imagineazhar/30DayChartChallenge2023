@@ -1,3 +1,3 @@
-# 30DayChartChallenge — Relationships — Day 14: New Tool
+# 30DayChartChallenge — Relationships — Day 18: EuroStat
 
-![CO2 Emissions](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/14-new_tool/CO2.png)
+![Life Satisfaction](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/18-eurostat/life_sati.png)

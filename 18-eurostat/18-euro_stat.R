@@ -24,7 +24,7 @@ life <- merge(x=df,y=countries,
   mutate(category_nr = row_number())|>
   ungroup()
 
-f = 0.9  # change to change shape of the "balloon"
+f = 1  # change to change shape of the "balloon"
 
 df_shapes <- life |>
   rowwise()|>
@@ -71,7 +71,7 @@ body_font <- "body_font"
 
 # ------ Texts ------ 
 
-title_text <- "Life Satisfaction in Europe"
+title_text <- "Life Satisfaction in Europe, 2018"
 subtitle_text <- "Percentage of the population rating their satisfaction as high, medium or low."
 caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: Eurostat"
 
