@@ -78,8 +78,8 @@ caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: Eurostat
 # ------ Plot ------ 
 df_shapes |> ggplot()+
   geom_bspline_closed(aes(x_1, y_1, group = country, fill = pal[1]), alpha = 0.8)+
-  geom_bspline_closed(aes(x_2, y_2, group = country, fill = pal[2]), alpha = 0.8)+
-  geom_bspline_closed(aes(x_3, y_3, group = country, fill = pal[3]), alpha = 0.8)+
+  geom_bspline_closed(aes(-x_2, -y_2, group = country, fill = pal[2]), alpha = 0.8)+
+  geom_bspline_closed(aes(-x_3, -y_3, group = country, fill = pal[3]), alpha = 0.8)+
   scale_fill_identity(guide = guide_legend(title = "", nrow = 2, 
                                            override.aes = list(alpha = 0.7, shape = 2)),
                       breaks = pal, labels = pal_df$l) +
@@ -87,14 +87,14 @@ df_shapes |> ggplot()+
                              label.position = "top"))+
   coord_fixed(clip="off")+
 
-  facet_wrap(vars(country), ncol = 7,
+  facet_wrap(vars(country), ncol = 5,
              labeller = labeller(country = label_wrap_gen(width = 10)))+
   labs(title = title_text,
        subtitle = subtitle_text,
        caption = caption_text,
        x="",
        y="")+
-  hrbrthemes::theme_ipsum()+
+  theme_void()+
   theme(
     strip.text.x = element_text(family = title_font,
                                 face = 'bold',
@@ -120,7 +120,8 @@ df_shapes |> ggplot()+
     plot.title.position = "plot",
     plot.title = element_text(margin = margin(20, 0, 10, 0),
                               size = 40,
-                              family = title_font),
+                              family = title_font,
+                              face = "bold"),
     # Subtitle
     plot.subtitle = element_textbox(family=body_font,
                                     face = "plain",
