@@ -125,4 +125,4 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 
 ### Day 18: [Eurostat](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/18-eurostat)
 
-![Life Satisfaction](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/18-eurostat/life_sati.png)
+![Life Satisfaction](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/18-eurostat/life_satis.png)
