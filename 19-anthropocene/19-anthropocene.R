@@ -65,7 +65,8 @@ global_cropland|> ggplot(aes(x=year, y=avg_cropland))+
   theme_minimal()+
   theme(
     axis.title.y = element_text(margin = margin(0, 10, 0, 0),
-                                size = 12,
+                                size = 11,
+                                color = "grey30",
                                 family = body_font,
                                 face = "plain"),
     # Legend
