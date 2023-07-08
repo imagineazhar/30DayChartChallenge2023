@@ -130,4 +130,4 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ## Timeseries
 ### Day 19: [Anthropocene](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/19-anthropocene)
 
-![cropland](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/19-anthropocene/crop-land.png)
+![cropland](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/19-anthropocene/crop_land.png)
