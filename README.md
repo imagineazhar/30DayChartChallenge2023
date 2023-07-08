@@ -30,7 +30,7 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
   * Day 17: [Networks](https://github.com/imagineazhar/TidyTuesday/tree/main/2022/Week_42)
   * Day 18: [data-day:EuroStat](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/18-eurostat)
 * Timeseries
-  * Day 19: [Anthropocene]
+  * Day 19: [Anthropocene](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/19-anthropocene)
   * Day 20: [Correlation]
   * Day 21: [Dow/upnwards]
   * Day 22: [Green-Energy]
@@ -128,3 +128,6 @@ My contributions to the [#30DayChartChallenge 2023](https://30daychartchallenge.
 ![Life Satisfaction](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/18-eurostat/life_satis.png)
 
 ## Timeseries
+### Day 19: [Anthropocene](https://github.com/imagineazhar/30DayChartChallenge2023/tree/main/19-anthropocene)
+
+![cropland](https://github.com/imagineazhar/30DayChartChallenge2023/blob/main/19-anthropocene/crop-land.png)

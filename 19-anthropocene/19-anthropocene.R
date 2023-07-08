@@ -6,19 +6,34 @@ library(ggtext)
 # ------ Get Data ------ 
 
 
-df <- read.csv("data.csv")|>
-  janitor::clean_names()|>
-  filter(item=="Agricultural land")
+df <- read.csv("global-cropland.csv")|>
+  janitor::clean_names()
 
-land_df <- df|>
-  select(area,"y1961", "y1962", "y1963", "y1964", "y1965", "y1966", "y1967", "y1968", "y1969", "y1970", "y1971", "y1972", "y1973", "y1974", "y1975", "y1976", "y1977", "y1978", "y1979", "y1980", "y1981", "y1982", "y1983", "y1984", "y1985", "y1986", "y1987", "y1988", "y1989", "y1990", "y1991", "y1992", "y1993", "y1994", "y1995", "y1996", "y1997", "y1998", "y1999", "y2000", "y2001", "y2002" )|>
-  pivot_longer(cols = c("y1961", "y1962", "y1963", "y1964", "y1965", "y1966", "y1967", "y1968", "y1969", "y1970", "y1971", "y1972", "y1973", "y1974", "y1975", "y1976", "y1977", "y1978", "y1979", "y1980", "y1981", "y1982", "y1983", "y1984", "y1985", "y1986", "y1987", "y1988", "y1989", "y1990", "y1991", "y1992", "y1993", "y1994", "y1995", "y1996", "y1997", "y1998", "y1999", "y2000", "y2001", "y2002"),
-               names_to = "year",
-               values_to = "value")|>
-  filter(area=="World")
+global_df <- df|>
+  filter(entity=="World")
 
-land_df$year<-gsub("y","",as.character(land_df$year))
+global_df$avg_cropland=rowMeans(global_df[,c("cropland_ha","cropland_hyde3_2",
+             "cropland_00006620_area_005110_hectares")], na.rm = TRUE)
+  
+global_cropland <- global_df|>
+  filter(year>0)|>
+  select("year","avg_cropland")
+  
 
+# Define function
+format_number <- function(x) {
+  sapply(x, function(x) {
+    if(is.na(x)) {
+      return(NA)
+    } else if(x >= 1e9) {
+      return(paste0(round(x / 1e9, 2), " B"))
+    } else if(x >= 1e6) {
+      return(paste0(round(x / 1e6, 2), " M"))
+    } else {
+      return(as.character(x))
+    }
+  })
+}
 
 # ------ Typography ------ 
 
@@ -31,42 +46,30 @@ body_font <- "body_font"
 
 # ------ Texts ------ 
 
-title_text <- "Agricultural land (1000 ha)"
-subtitle_text <- ""
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: FAOSTAT"
+title_text <- "Global cropland is still increasing."
+subtitle_text <- "Cropland is land used to grow crops, excluding pasture used for livestock grazing."
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: Taylor & Rising (2021); Food and Agriculture Organization of the United Nations; Goldewijk et al. (2017)"
 
 # ------ Plot ------ 
 
-land_df|> ggplot(aes(x=as.integer(year), y=value, label=value)) +
-  geom_area(fill="#70ad47", alpha=0.4)+
-  geom_line(color="#70ad47", size=2)+
-  scale_y_log10()+
+global_cropland|> ggplot(aes(x=year, y=avg_cropland))+
+  geom_line(linewidth=1.5,
+            color="#1A5D1A")+
+  scale_x_continuous(limits = c(100,2020),breaks = seq(100,2020,250))+
+  scale_y_continuous(labels=format_number)+
   labs(title = title_text,
        subtitle = subtitle_text,
        caption = caption_text,
        x="",
-       y="")+
+       y="Cropland (ha)")+
   theme_minimal()+
   theme(
-    strip.text.x = element_text(family = title_font,
-                                face = 'bold',
-                                size = 12, colour = "grey20"),
-    axis.text.y = element_blank(),
-    axis.ticks.y = element_blank(),
-    axis.text.x = element_blank(),
-    axis.ticks.x = element_blank(),
-    
+    axis.title.y = element_text(margin = margin(0, 10, 0, 0),
+                                size = 12,
+                                family = body_font,
+                                face = "plain"),
     # Legend
-    legend.position = "top",
-    legend.title = element_blank(),
-    legend.key.height= unit(0.5, 'cm'),
-    legend.key.width= unit(2.5, 'cm'),
-    legend.spacing = unit(1, 'cm'),
-    legend.text = element_text(family = body_font,
-                               size=15,
-                               face = 'plain',
-                               color = "grey10"),
-    
+    legend.position = "off",
     
     # TITLE
     plot.title.position = "plot",
@@ -84,7 +87,7 @@ land_df|> ggplot(aes(x=as.integer(year), y=value, label=value)) +
     # Caption
     plot.caption = element_text(family=body_font,
                                 face="plain",
-                                size=14, 
+                                size=10, 
                                 color="grey40",
                                 hjust=.5,
                                 margin=margin(20,0,0,0)),
@@ -98,7 +101,7 @@ land_df|> ggplot(aes(x=as.integer(year), y=value, label=value)) +
 # ------ Save Plot ------ 
 
 showtext_opts(dpi = 320)
-ggsave("agri_land.png",dpi=320,
-       width = 12, height = 14)
+ggsave("crop_land.png",dpi=320,
+       width = 12, height = 8)
 showtext_auto(FALSE)
 
