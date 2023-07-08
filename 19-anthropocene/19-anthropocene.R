@@ -12,7 +12,7 @@ df <- read.csv("global-cropland.csv")|>
 global_df <- df|>
   filter(entity=="World")
 
-global_df$avg_cropland=rowMeans(global_df[,c("cropland_ha","cropland_hyde3_2",
+global_df$avg_cropland=rowMeans(global_df[,c("cropland_hyde3_2",
              "cropland_00006620_area_005110_hectares")], na.rm = TRUE)
   
 global_cropland <- global_df|>
@@ -48,7 +48,7 @@ body_font <- "body_font"
 
 title_text <- "Global cropland is still increasing."
 subtitle_text <- "Cropland is land used to grow crops, excluding pasture used for livestock grazing."
-caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: Taylor & Rising (2021); Food and Agriculture Organization of the United Nations; Goldewijk et al. (2017)"
+caption_text <- "Graphic: Muhammad Azhar | #30DayChartChallenge | Data: Food and Agriculture Organization of the United Nations; Goldewijk et al. (2017)"
 
 # ------ Plot ------ 
 
